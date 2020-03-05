@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>拼多商城学子餐饮店家页</title>
+    <link href="../css/foodstore.css" rel="Stylesheet"/>
+    <link href="../css/header.css" rel="Stylesheet"/>
+    <link href="../css/footer.css" rel="Stylesheet"/>
+</head>
+<body>
+<!-- 页面顶部-->
+<header id="top">
+    <div id="logo" class="lf">
+        <img src="../images/header/logo.png" alt="logo"/>
+        <!-- <img src="http://img002.fview.cn/Public/upload/product/3085e6e56bc38e95e0aa3177e12edf00.jpg" alt="logo"/> -->
+    </div>
+    <div id="top_input" class="lf">
+        <input id="input" type="text" placeholder="请输入您要搜索的内容"/>
+        <!-- <div class="seek" tabindex="-1">
+            <div class="actived" ><span>分类搜索</span> <img src="../images/header/header_normal.png" alt=""/></div>
+            <div class="seek_content" >
+                <div id="shcy" >二手手机</div>
+                <div id="xxyp" >手机配件</div>
+                <div id="srdz" >私人订制</div>
+            </div>
+        </div> -->
+        <a href="javascript:void(0);" class="rt" onclick="search1()"><img id="search" src="../images/header/search2.png" alt="搜索"/></a>
+    </div>
+    <script>
+	    function search1(){
+	    	debugger
+	    	var q=$("#input").val();
+	    	console.log(q);
+	    	window.location.href = "/search/toSearch.html?key="+q;
+	    }
+    </script>
+    <div class="rt">
+        <ul class="lf">
+            <li><a href="myCollect.html" title="我的收藏"><img class="care" src="../images/header/care.png" alt=""/></a><b>|</b></li>
+            <li><a href="myOrder.html" title="我的订单"><img class="order" src="../images/header/order.png" alt=""/></a><b>|</b></li>
+            <li><a href="cart.html" title="我的购物车"><img class="shopcar" src="../images/header/shop_car.png" alt=""/></a><b>|</b></li>
+            <li><a href="lookforward.html">帮助</a><b>|</b></li>
+            <li><a href="login.html">登录</a></li>
+        </ul>
+    </div>
+</header>
+<!-- nav主导航-->
+<nav id="nav">
+    <ul>
+        <li><a href="/" >首页</a></li>
+        <li><a href="item_food.html">二手手机</a></li>
+        <li><a href="itemCat.html" class="active">手机配件</a></li>
+        <li><a href="lookforward.html">私人定制</a></li>
+    </ul>
+</nav>
+<!-- banner部分-->
+<div class="store">
+    <img src="../images/foodstore/背景1.png" alt=""/>
+</div>
+
+<!--精选美食-->
+<div class="sotre_action">
+    <div class="store_action_left">
+        <div class="store_action_left_top">
+            <p id="foodstore_name"><img src="../images/foodstore/foodstore_icon1.png" alt=""/>手机专区</p>
+            <div id="brand">
+                <!-- <a href="#zc" class="active">苹果</a>
+                <a href="#youhui">华为</a>
+                <a href="#djzc">小米</a>
+                <a href="#pcxl">三星</a>
+                <a href="#ylxl">OPPO</a>
+                <a href="#ylxl">VIVO</a>
+                <a href="#ylxl">魅族</a>
+                <a href="#ylxl">锤子</a> -->
+            </div>
+        </div>
+        <div class="store_action_left_content" id="pItemShow">
+        
+        </div>
+    </div>
+</div>
+<!--商家-->
+
+<!-- 品质保障，私人定制等-->
+<div id="foot_box">
+    <div class="icon1 lf">
+        <img src="../images/footer/icon1.png" alt=""/>
+
+        <h3>品质保障</h3>
+    </div>
+    <div class="icon2 lf">
+        <img src="../images/footer/icon2.png" alt=""/>
+
+        <h3>私人定制</h3>
+    </div>
+    <div class="icon3 lf">
+        <img src="../images/footer/icon3.png" alt=""/>
+
+        <h3>学员特供</h3>
+    </div>
+    <div class="icon4 lf">
+        <img src="../images/footer/icon4.png" alt=""/>
+
+        <h3>专属特权</h3>
+    </div>
+</div>
+<!-- 页面底部-->
+<div class="foot_bj">
+    <div id="foot">
+        <div class="lf">
+            <p class="footer1"><img src="../images/footer/logo.png" alt="" class=" footLogo"/></p>
+            <p class="footer2"><img src="../images/footer/footerFont.png"alt=""/></p>
+        </div>
+        <div class="foot_left lf" >
+            <ul>
+                <li><a href="#"><h3>买家帮助</h3></a></li>
+                <li><a href="#">新手指南</a></li>
+                <li><a href="#">服务保障</a></li>
+                <li><a href="#">常见问题</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><h3>商家帮助</h3></a></li>
+                <li><a href="#">商家入驻</a></li>
+                <li><a href="#">商家后台</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><h3>关于我们</h3></a></li>
+                <li><a href="#">关于拼多</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li>
+                    <img src="../images/footer/wechat.png" alt=""/>
+                    <img src="../images/footer/sinablog.png" alt=""/>
+                </li>
+            </ul>
+        </div>
+        <div class="service">
+            <p>拼多商城客户端</p>
+            <img src="../images/footer/ios.png" class="lf">
+            <img src="../images/footer/android.png" alt="" class="lf"/>
+        </div>
+        <div class="download">
+            <img src="../images/footer/erweima.png">
+        </div>
+		<!-- 页面底部-备案号 #footer -->
+        <div class="record">
+            &copy;2020 拼多集团有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/foodstore.js"></script>
+<script>
+	//搜索牌子并显示
+	  $(function (){
+		  $.ajaxSettings.async = false;
+		//获取cid更改名为手机或配件
+		$.get("/item/getcid",function(cid){
+			//console.log(cid);
+			if(cid==567){
+				//console.log($("#foodstore_name").html());
+				$("#foodstore_name").html("<img src='../images/foodstore/foodstore_icon1.png' alt=''/>配件专区");
+			}else{
+				$("#foodstore_name").html("<img src='../images/foodstore/foodstore_icon1.png' alt=''/>手机专区");
+			}
+		})
+		var url="/item/searchBrand";
+		$.get(url,function(result){
+			if(result.state==1){
+				$("#brand").html("");
+				$("#pItemShow").html("");
+				for(var l=0;l<result.data.length;l++){
+					var c="";
+					//牌子输入
+					$("#brand").append("<a href='foodstore.html#searchBrand"+l+"'>"+result.data[l].brand+"</a>");
+					//每个品牌下的内容
+					c+="<div id='searchBrand"+l+"'><div class='salc_top'>"+result.data[l].brand+"</div>";
+					//$("#pItemShow").append("<div id='searchBrand"+l+"'><div class='salc_top'>"+result.data[l].brand);
+					
+					$.get("/item/searchByBrand",{"brand":result.data[l].brand},function(result1){
+						c+="<div class='salc_content'>";
+						//$("#pItemShow").append("<div class='salc_content'>");
+						for(var e=0;e<result1.data.length;e++){
+							c+="<div id='"+e+"'>";
+							c+="<img src='"+result1.data[e].image+"' alt=''/>";
+							//console.log("<img src='"+result1.data[e].image+"' alt=''/>");
+							c+="<div>";
+							//
+							c+="<p><span class='foodname'><a href='/item/toItemInfo.html?itemId="+result1.data[e].id+"'>"+result1.data[e].title+"</a></span> </p>";
+							c+="<div>";
+							c+="<span>¥:<span class='price'>"+result1.data[e].price+"</span></span>";
+							c+="</div></div></div>";
+							//$("#pItemShow").append("<div id='"+e+"'>");
+							//$("#pItemShow").append("<img src='../images/foodstore/breakfast_4.png' alt=''/>");
+							//$("#pItemShow").append("<div>");
+							//$("#pItemShow").append("<p><span class='foodname'><a href=''>"+result1.data[e].title+"</a></span> </p>");
+							//$("#pItemShow").append("<div>");
+							//$("#pItemShow").append("<span>¥:<span class='price'>"+result1.data[e].price+"</span></span>");
+							//$("#pItemShow").append("</div></div></div>"); 
+						}
+						c+="</div></div></div>";
+						//console.log(c);
+						$("#pItemShow").append(c);
+						//console.log($("#pItemShow").html());
+					});
+					
+				}
+			}
+			
+		});
+		$.ajaxSettings.async = true;
+	});
+	
+	//由牌子搜索某一牌子下的商品
+	$(function(){
+		
+	})
+ 
+</script>
+</body>
+</html>
+<!-- /* var divList=$("#pItemShow").children("div");
+				for(var d=0;d<divList.length;d++){
+					var id=divList[d].id;
+					var content=$("#"+id).children(".salc_top").html();
+					var param={"brand":content};
+					var c=" ";
+					$.get("/item/searchByBrand",param,function(result){
+						c=c+"<div class='salc_content'>"
+						
+						for(var e=0;e<result.data.length;e++){
+							c+="<div id='"+e+"'>";
+							c+="<img src='../images/foodstore/breakfast_4.png' alt=''/>";
+							c+="<div>";
+							c+="<p><span class='foodname'><a href=''>"+result.data[e].title+"</a></span> </p>";
+							c+="<div>";
+							c+="<span>¥:<span class='price'>"+result.data[e].price+"</span></span>";
+							c+="</div></div></div>";
+						}
+						c+="</div>"
+							$("#"+id).append(c);
+					});
+				} -->
+<!-- /* <div class="salc_content">
+					<div id="7">
+	                <img src="../images/foodstore/breakfast_4.png" alt=""/>
+	                <div>
+	                    <p><span class="foodname"><a href="">青橙（Greenorange) VOGA V1 16GB 移动/联通4G手机 双卡双待 极夜黑</a></span> </p>
+	                    <div>
+	                    <span>¥:<span class="price">7.00</span></span>
+	                    </div>
+	                </div>
+            		</div>
+            	</div> */ -->
